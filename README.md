@@ -30,7 +30,7 @@ _Optional. Alternativ: Beliebige passende Buchsen oder direkt anlöten_
 
 ## Wie?
 Der Aufbau der Elektronik ist in BitBastelei #151 beschrieben, das Gehäuse wird in einer späteren Forge erstellt
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/pN4XiSHx7JQ/0.jpg)](http://www.youtube.com/watch?v=pN4XiSHx7JQ)
 
 Gundlegend:
 * Hardware zusammenstecken
