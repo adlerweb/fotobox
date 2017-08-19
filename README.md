@@ -17,7 +17,7 @@ _Alternativ: Beliebiges Micro-USB-Netzteil mit genügend Leistung für RPi3_
 _Alternativ: Beliebige Micro-SD-Karte mit >8GB_
 * 3 Stk. [AV 19-00](https://www.reichelt.de/Vandalismus-Taster/AV-19-00/3/index.html?ACTION=3&GROUPID=7588&ARTICLE=27911&OFFSET=75&) - Taster zur Bedienung. Im diesem fall 19mm Vendalismus-Taster wg. Größe und Spritzwasserschutz
 _Alternativ: Beliebige Taster mit Schließer_
-* [VT-1310 :: Kuppelleuchte](https://www.reichelt.de/Decken-Einbauleuchten/VT-1310/3/index.html?ACTION=3&LA=20&GROUP=L4&GROUPID=5953&ARTICLE=201361&START=0&SORT=preis&OFFSET=75) - als zusätzliche Beleuchtung. 8W LED, CRI >80. Hier mit Netzanschluss um zusätzliche Netzteile/Spannungen zu vermeiden.
+* [VT-1310 :: Kuppelleuchte](https://www.reichelt.de/Decken-Einbauleuchten/VT-1310/3/index.html?ACTION=3&LA=20&GROUP=L4&GROUPID=5953&ARTICLE=201361&START=0&SORT=preis&OFFSET=75) - als zusätzliche Beleuchtung. 8W LED, CRI >70. Hier mit Netzanschluss um zusätzliche Netzteile/Spannungen zu vermeiden.
 _Optional. Alternativ: Beliebige Lampe mit entsprechender Stromversorgung, vorzugsweise gerichtet_
 * [BRENNENSTUHL 1 15862 0](https://www.reichelt.de/Steckdosenleiste-allgemein/EL-3-FACH-OS-SW/3/index.html?ACTION=3&GROUPID=4280&ARTICLE=34978&OFFSET=75&) - 3-fach-Steckdosenleiste um alle Geräte der Fotobox einstecken zu können
 _Optional. Alternativ: Beliebiger Mehrfachstecker mit genügend Steckplätzen_
@@ -30,7 +30,7 @@ _Optional. Alternativ: Beliebige passende Buchsen oder direkt anlöten_
 
 ## Wie?
 Der Aufbau der Elektronik ist in BitBastelei #151 beschrieben, das Gehäuse wird in einer späteren Forge erstellt
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/pN4XiSHx7JQ/0.jpg)](http://www.youtube.com/watch?v=pN4XiSHx7JQ)
+[![BitBastelei #151 @ YouTube](http://img.youtube.com/vi/pN4XiSHx7JQ/0.jpg)](http://www.youtube.com/watch?v=pN4XiSHx7JQ)
 
 Gundlegend:
 * Hardware zusammenstecken
