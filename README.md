@@ -46,9 +46,11 @@ Gundlegend:
   * FS_MOUNTOPTIONS="-fstype=vfat,uid=1000"
 * Ordner ~/.config/openbox anlegen
 * Datei ~/.config/openbox/autostart
+```
     xset -dpms &
     xet s off &
     python3 ~/fotobox/fotobox.py
+```
 * Hoffen, dass alles funktioniert
 
 ## Was nun?
