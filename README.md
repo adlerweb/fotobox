@@ -30,11 +30,12 @@ _Optional. Alternativ: Beliebige passende Buchsen oder direkt anlöten_
 
 ## Wie?
 Der Aufbau der Elektronik ist in BitBastelei #151 beschrieben, das Gehäuse wird in einer späteren Forge erstellt
+
 [![BitBastelei #151 @ YouTube](http://img.youtube.com/vi/pN4XiSHx7JQ/0.jpg)](http://www.youtube.com/watch?v=pN4XiSHx7JQ)
 
 Gundlegend:
 * Hardware zusammenstecken
-* Raspian installieren
+* Raspian Jessie installieren (http://downloads.raspberrypi.org/raspbian/images/raspbian-2017-07-05/, #1)
 * In *sudo raspi-config* unter *Interface* die Kamera einschalten
 * Netzwerk anschließen bzw. WiFi einrichten
 * sudo apt update
