@@ -95,11 +95,11 @@ class Ui_Form(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Sans\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Hallo und willkommen in der Fotobox!</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Hallo und Willkommen in der Fotobox!</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Hier kannst du Fotos von dir und deinen Freunden machen!</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Drücke einfach auf den Knopf &quot;Neues Foto&quot; und los geht es!</p></body></html>"))
         self.l_btn1.setText(_translate("Form", "Button 1 ▶"))
         self.l_btn2.setText(_translate("Form", "Button 2 ▶"))
         self.l_btn3.setText(_translate("Form", "Button 3 ▶"))
-        self.label.setText(_translate("Form", "Fotobox Version 0.0.1 · sponsored by: BitBastelei · Reichelt Elektronik"))
+        self.label.setText(_translate("Form", "Fotobox Version 0.0.1"))
 
