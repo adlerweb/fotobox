@@ -1,6 +1,7 @@
 # Raspberry Pi Fotobox
+
 ## Was?
-Dieses Repository enthält Beschreibung und Scripte zum Bau einer Fotobox auf Basis des Raspberry Pi 3, wie in BitBastelei #151 vorgestellt.
+Dieses Repository enthält Beschreibung und Scripte zum Bau einer Fotobox auf Basis des Raspberry Pi 3.
 
 ## Warum?
 Warum nicht?
@@ -26,35 +27,26 @@ _Alternativ: Beliebiges passendes Anschlusskabel_
 * Drahtbrücken mit Buchse - z.B. [Buchse-Buchse 15cm](https://www.reichelt.de/Experimentier-Steckboards/STECKBOARD-JBBGR/3/index.html?ACTION=3&GROUPID=7791&ARTICLE=139538&OFFSET=75&). Einfachste Möglichkeit passende Buchsen für RIp-GPIO-Header zu erhalten
 _Optional. Alternativ: Beliebige passende Buchsen oder direkt anlöten_
 * SD- oder MicroSD-Kartenleser - z.B. [CARDREADER-SD](https://www.reichelt.de/Kartenleser-und-Adapter/CARDREADER-SD/3/index.html?ACTION=3&GROUPID=5262&ARTICLE=144560&OFFSET=75&).
-* USB-Stick mit VFAT-Dateisystem nach Wahl zur Speicherung der Bilder
+* Grobtaster
+_Optional._
 
 ## Wie?
-Der Aufbau der Elektronik ist in BitBastelei #151 beschrieben, das Gehäuse wird in einer späteren Forge erstellt
+Der ursprüngliche Aufbau der Elektronik ist in BitBastelei #151 beschrieben, das Gehäuse wird in einer späteren Forge erstellt. Nachträglich wurde ein Grobtaster parallel mit dem obersten eingebauten Taster geschaltet um eine Fernauslösung zu ermöglichen.
 
 [![BitBastelei #151 @ YouTube](http://img.youtube.com/vi/pN4XiSHx7JQ/0.jpg)](http://www.youtube.com/watch?v=pN4XiSHx7JQ)
 
 Gundlegend:
 * Hardware zusammenstecken
-* Raspian Jessie installieren (http://downloads.raspberrypi.org/raspbian/images/raspbian-2017-07-05/, #1)
-* In *sudo raspi-config* unter *Interface* die Kamera einschalten
-* Netzwerk anschließen bzw. WiFi einrichten
-* sudo apt update
-* sudo apt upgrade
-* sudo apt install openbox xorg python3 python3-picamera python3-pyqt5 sxiv tmux lightdm vim usbmount python3-rpi.gpio git
-* git clone https://github.com/adlerweb/fotobox.git fotobox
-* Änderungen in /etc/usbmount/usbmount.conf
-  * Aus **MOUNTOPTIONS** die Option *sync* entfernen
-  * FS_MOUNTOPTIONS="-fstype=vfat,uid=1000"
-* Ordner ~/.config/openbox anlegen
-* Datei ~/.config/openbox/autostart
-```
-    xset -dpms &
-    xet s off &
-    python3 ~/fotobox/fotobox.py
-```
+* Raspian Stretch installieren
+* @todo Anleitung v0.2 noch nicht vorhanden
 * Hoffen, dass alles funktioniert
 
 ## Was nun?
 Wie die meisten meiner Projekte kann dieses Repository nur als Vorlage dienen - es gibt viel zu verbessern. Warum kein besseres Design? Soundeffekte? Automatisches Posten auf Instagram, Facebook oder Twitter? Eingebauter Fotodrucker mit CUPS? LED-Lampe nur bei der Aufnahme einschalten? Viel ist möglich.
 Ich nutze z.B. auf dem Raspberry Pi einen Webserver (Nginx/PHP-FPM) mit [UberGallery](http://www.ubergallery.net/) um Besuchern per WLAN einen Blick auf die Fotos zu ermöglichen.
 
+## Hinweise
+* Die Bilder werden mit einer Datumsangabe gespeichert. Da der Raspi keine eigene RTC hat funktioniert dies nur zuverlässig, wenn er per Netzwerkkarte oder WLAN mit dem Internet verbunden ist und sich so per NTP mit einem Zeitserver abgleichen kann.
+* Das Design kann über die HTML-Datei im Ordner "design" angepasst werden.
+* Für andere Auflösungen müssen HTML-Design und config.py angepasst werden
+* Bei Fehlern werden Meldungen per STDOUT ausgegeben. Bei Nutzung des Setupscriptes werden diese nach /home/pi/fotobox/fotobox.log gespeichert.
