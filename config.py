@@ -8,6 +8,9 @@ fotoboxCfg['cam-p-height']    = 720
 fotoboxCfg['cam-p-x']         = 9
 fotoboxCfg['cam-p-y']         = 261
 
+fotoboxCfg['cam-c-width']     = 3280
+fotoboxCfg['cam-c-height']    = 2464
+
 fotoboxCfg['nopi']            = False #True = Skip rasperry specific modules
 
 fotoboxCfg['temp']            = '/tmp/fotobox/'
@@ -31,4 +34,3 @@ fotoboxText['btn-next']     = 'Nächstes ▶'
 fotoboxText['btn-previous'] = 'Vorheriges ▶'
 fotoboxText['btn-back']     = 'Zurück ▶'
 fotoboxText['btn-empty']    = ''
-

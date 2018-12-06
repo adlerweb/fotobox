@@ -162,7 +162,7 @@ class Ui_Form_mod(object):
 
     self.lastPhoto = datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".jpg"
     if not fotoboxCfg['nopi']:
-      # picamera: Any attempt to capture an image without using the video port will (temporarily) select the 2592x1944 mode while the capture is performed
+      self.camera.resolution = (fotoboxCfg['cam-c-width'], fotoboxCfg['cam-c-height'])
       self.camera.capture(self.temp+self.lastPhoto)
     else:
       copyfile(os.path.dirname(os.path.realpath(__file__)) + '/design/dummy.jpg', self.temp+self.lastPhoto)
