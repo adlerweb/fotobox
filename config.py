@@ -14,7 +14,7 @@ fotoboxCfg['cam-c-height']    = 2464
 fotoboxCfg['nopi']            = False #True = Skip rasperry specific modules
 
 fotoboxCfg['temp']            = '/tmp/fotobox/'
-fotoboxCfg['save']            = '/home/pi/fotobox/images'
+fotoboxCfg['save']            = '/home/pi/fotobox/images/'
 
 fotoboxCfg['countdown']       = 3 # Seconds
 
