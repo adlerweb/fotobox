@@ -8,10 +8,12 @@ fotoboxCfg['cam-p-width']     = 960
 fotoboxCfg['cam-p-height']    = 720
 fotoboxCfg['cam-p-x']         = 9
 fotoboxCfg['cam-p-y']         = 261
+fotoboxCfg['cam-p-hflip']     = True # False = Like a camera, True = Like a mirror
 
 # PiCam v1: 2592x1944, v2: 3280x2464
 fotoboxCfg['cam-c-width']     = 3280
 fotoboxCfg['cam-c-height']    = 2464
+fotoboxCfg['cam-c-hflip']     = False # False = Like a camera, True = Like a mirror
 
 fotoboxCfg['nopi']            = False #True = Skip rasperry specific modules
 

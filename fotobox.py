@@ -57,6 +57,9 @@ class Ui_Form_mod(object):
     #Camera
     if not fotoboxCfg['nopi']:
       self.camera = PiCamera()
+      self.camera.hflip = fotoboxCfg['cam-c-hflip']
+      if(fotoboxCfg['cam-p-hflip'] == fotoboxCfg['cam-c-hflip']):
+        fotoboxCfg['cam-p-hflip'] = False
     self.isLive = False
 
     #Countdown Updater
@@ -111,7 +114,7 @@ class Ui_Form_mod(object):
     if not self.isLive:
       self.tplImage = "liveBack.png"
       if not fotoboxCfg['nopi']:
-        self.camera.start_preview(fullscreen=False, window = (fotoboxCfg['cam-p-x'], fotoboxCfg['cam-p-y'], fotoboxCfg['cam-p-width'], fotoboxCfg['cam-p-height']))
+        self.camera.start_preview(fullscreen=False, window = (fotoboxCfg['cam-p-x'], fotoboxCfg['cam-p-y'], fotoboxCfg['cam-p-width'], fotoboxCfg['cam-p-height']), hflip=fotoboxCfg['cam-p-hflip'])
         print("Enabling camera preview")
       self.isLive = True
 
@@ -129,7 +132,7 @@ class Ui_Form_mod(object):
     if not self.isLive:
       self.tplImage = "liveBack.png"
       if not fotoboxCfg['nopi']:
-        self.camera.start_preview(fullscreen=False, window = (fotoboxCfg['cam-p-x'], fotoboxCfg['cam-p-y'], fotoboxCfg['cam-p-width'], fotoboxCfg['cam-p-height']))
+        self.camera.start_preview(fullscreen=False, window = (fotoboxCfg['cam-p-x'], fotoboxCfg['cam-p-y'], fotoboxCfg['cam-p-width'], fotoboxCfg['cam-p-height']), hflip=fotoboxCfg['cam-p-hflip'])
         print("Enabling camera preview")
       self.isLive = True
 
