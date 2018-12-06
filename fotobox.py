@@ -153,15 +153,24 @@ class Ui_Form_mod(object):
 
     self.countdownTime-=1
 
-    if(self.countdownTime >= 0):
+    if(self.countdownTime > 0):
       self.timerCnt.start(1000)
+    elif self.countdownTime == 0:
+      self.timerCnt.start(750)
+    elif self.countdownTime == -1:
+      #We already switch it here because photoTake seems to freeze the GPU briefly
+      #and the updated HTML will not be ready in time
+      self.tplInstruct = fotoboxText['info-capture']
+      self.tplImage = "capturing.png"
+      self.tplFooter = "Capturing..."
+      self.updateHtml(Form)
+      self.timerCnt.start(250)
     else:
       self.photoTake(Form)
 
   def photoTake(self, Form):
     if(self.isLive):
       self.isLive=False
-      self.tplImage = "init.png"
       if not fotoboxCfg['nopi']:
         self.camera.stop_preview()
         print("Disabling camera preview")
