@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotobox</title>
+</head>
+
+<body
+    style="
+        padding: 0;
+        margin: 0;
+        font-family: monospace, sans-serif;
+    ">
+    <div id="fotobox" style="width: 1280px; height: 1024px; background-image: url('backdrop.png');">
+
+        <div
+            id="infobox"
+            style="
+                position: fixed;
+                left: 65px;
+                top: 24px;
+                width: 825px;
+                height: 105px;
+                font-size: 24px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            "
+        >
+        ${info}
+        </div>
+
+        <nav>
+            <div
+                id="Button1"
+                style="
+                    position: fixed;
+                    right: 15px;
+                    top: 550px;
+                    font-size: 40px;
+                    width: 295px;
+                    height: 97px;
+                    text-align: right;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    overflow: hidden;
+                ">
+                <div>
+                ${btn1}
+            </div>
+
+            <div
+                id="Button2"
+                style="
+                    position: fixed;
+                    right: 15px;
+                    top: 700px;
+                    font-size: 40px;
+                    width: 295px;
+                    height: 97px;
+                    text-align: right;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    overflow: hidden;
+                ">
+                <div>
+                ${btn2}
+            </div>
+
+            <div
+                id="Button3"
+                style="
+                    position: fixed;
+                    right: 15px;
+                    top: 850px;
+                    font-size: 40px;
+                    width: 295px;
+                    height: 97px;
+                    text-align: right;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    overflow: hidden;
+                ">
+                <div>
+                ${btn3}
+            </div>
+        </nav>
+
+        <img src="${image}" style="height: 720px; width: 960px; background-image: url('init.png'); position: fixed; left: 9px; bottom: 43px;" />
+
+        <footer
+            style="
+                position: fixed;
+                left: 0px;
+                bottom: 0px;
+                width: 1280px;
+                height: 40px;
+                text-align: center;
+                font-size: 28.5px;
+                margin-top: 3px;
+                color: rgb(122, 122, 122);
+            ">
+            ${status}
+        </footer>
+    </div>
+</body>
+</html>
