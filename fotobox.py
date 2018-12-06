@@ -283,7 +283,6 @@ class QWebView_mod(QWebView):
       GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_UP)
       GPIO.setup(21, GPIO.IN, pull_up_down=GPIO.PUD_UP)
       GPIO.setup(22, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-      GPIO.setup(25, GPIO.OUT)
 
       self.btnC1 = GPIO.HIGH
       self.btnC2 = GPIO.HIGH
