@@ -222,7 +222,7 @@ class Ui_Form_mod(object):
     self.entries = list(self.entries)
 
     if(len(self.entries) > 0):
-      self.viewerIndex = len(self.entries)-1
+      self.viewerIndex = 0
       self.screenViewer(Form)
     else:
       print("No images to show")
