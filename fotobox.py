@@ -112,6 +112,7 @@ class Ui_Form_mod(object):
       self.tplImage = "liveBack.png"
       if not fotoboxCfg['nopi']:
         self.camera.start_preview(fullscreen=False, window = (fotoboxCfg['cam-p-x'], fotoboxCfg['cam-p-y'], fotoboxCfg['cam-p-width'], fotoboxCfg['cam-p-height']))
+        print("Enabling camera preview")
       self.isLive = True
 
     self.tplFooter = self.tplFooterOrg
@@ -129,6 +130,7 @@ class Ui_Form_mod(object):
       self.tplImage = "liveBack.png"
       if not fotoboxCfg['nopi']:
         self.camera.start_preview(fullscreen=False, window = (fotoboxCfg['cam-p-x'], fotoboxCfg['cam-p-y'], fotoboxCfg['cam-p-width'], fotoboxCfg['cam-p-height']))
+        print("Enabling camera preview")
       self.isLive = True
 
     self.tplFooter = self.tplFooterOrg
@@ -159,6 +161,7 @@ class Ui_Form_mod(object):
       self.tplImage = "init.png"
       if not fotoboxCfg['nopi']:
         self.camera.stop_preview()
+        print("Disabling camera preview")
 
     self.lastPhoto = datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".jpg"
     if not fotoboxCfg['nopi']:
