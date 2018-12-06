@@ -3,11 +3,13 @@ fotoboxCfg = {}
 fotoboxCfg['window-width']    = 1280
 fotoboxCfg['window-height']   = 1024
 
+# Depending on the camera used previews might got smaller than set here
 fotoboxCfg['cam-p-width']     = 960
 fotoboxCfg['cam-p-height']    = 720
 fotoboxCfg['cam-p-x']         = 9
 fotoboxCfg['cam-p-y']         = 261
 
+# PiCam v1: 2592x1944, v2: 3280x2464
 fotoboxCfg['cam-c-width']     = 3280
 fotoboxCfg['cam-c-height']    = 2464
 
