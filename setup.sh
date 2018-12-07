@@ -17,9 +17,9 @@ git clone https://github.com/adlerweb/fotobox.git /home/pi/fotobox
 
 echo "Configuring autostart"
 mkdir -p ~/.config/openbox
-echo "xet s off &" >> ~/.config/openbox/autostart
-echo "xset -dpms &" >> ~/.config/openbox/autostart
-echo "xset s noblank &" >> ~/.config/openbox/autostart
+echo "xset s noblank" >> ~/.config/openbox/autostart
+echo "xset s off" >> ~/.config/openbox/autostart
+echo "xset -dpms" >> ~/.config/openbox/autostart
 echo "cd ~/fotobox/ ; python3 fotobox.py | tee fotobox.log" >> ~/.config/openbox/autostart
 # GUI-Boot with autologin
 sudo raspi-config nonint do_boot_behaviour B4
