@@ -38,8 +38,20 @@ Der ursprüngliche Aufbau der Elektronik ist in BitBastelei #151 beschrieben, da
 Gundlegend:
 * Hardware zusammenstecken
 * Raspian Stretch installieren
-* @todo Anleitung v0.2 noch nicht vorhanden
+* Konfiguration dürchführen (siehe [setup.sh](https://github.com/adlerweb/fotobox/blob/master/setup.sh)
+  * Manuell
+    * In raspi-config Kamera einschalten und Startmodus auf GUI mit Autologin schalten
+    * ***openbox xorg python3 python3-picamera python3-pyqt5 python3-pyqt5.qtwebkit lightdm python3-rpi.gpio*** und ***git*** installieren
+    * Repository klonen
+    * Bildschirmschoner und Energiesparmodu abschalten
+    * fotobox.py in openbox-autostart legen
+  * Automatisch
+    * curl https://raw.githubusercontent.com/adlerweb/fotobox/master/setup.sh | bash
+    * Achtung: curl|bash ist immer ein Risiko fürs (System)[https://www.seancassidy.me/dont-pipe-to-your-shell.html] und die [Sicherheit](https://www.idontplaydarts.com/2016/04/detecting-curl-pipe-bash-server-side/). Use at your own risk.
 * Hoffen, dass alles funktioniert
+
+## Anpassen
+Die Dateien im Ordner "design" erlauben es recht einfach die Bilder auszutauschen oder gar ein komplett eigenes Design zu erstellen. Über die "config.py" können die zugehörigen Kameraeinstellungen sowie die angezeigten Texte geändert werden.
 
 ## Was nun?
 Wie die meisten meiner Projekte kann dieses Repository nur als Vorlage dienen - es gibt viel zu verbessern. Warum kein besseres Design? Soundeffekte? Automatisches Posten auf Instagram, Facebook oder Twitter? Eingebauter Fotodrucker mit CUPS? LED-Lampe nur bei der Aufnahme einschalten? Viel ist möglich.
