@@ -62,3 +62,17 @@ Ich nutze z.B. auf dem Raspberry Pi einen Webserver (Nginx/PHP-FPM) mit [UberGal
 * Das Design kann über die HTML-Datei im Ordner "design" angepasst werden.
 * Für andere Auflösungen müssen HTML-Design und config.py angepasst werden
 * Bei Fehlern werden Meldungen per STDOUT ausgegeben. Bei Nutzung des Setupscriptes werden diese nach /home/pi/fotobox/fotobox.log gespeichert.
+### SSH
+Um SSH direkt beim ersten Boot zu akivieren muss eine Datei "ssh" in der Partition "boot" erstellt werden. Wichtig für Windows-Nutzer: Die Datei muss ohne Dateiendung erstellt werden, ggf. also vorher die Dateinamenerweitungen einblenden (vergl: https://www.youtube.com/watch?v=huLq-RlZPpE). Nach dem Start ist der Pi über seine IP-Adresse (lässt sich z.B. im Router nachschauen) per SSH erreichbar, der Benutzer lautet "pi", das Passwort "raspberry". Das passwort sollte mittels "passwd" geändert werden um unbefugte Zugriffe zu vermeiden.
+### WiFi
+Um beim einem RPi mit integriertem WLAN dieses automatisch verbinden zu lassen legt man eine neue Textdatei mit dem Namen "wpa_supplicant.conf" in der Partition "boot" an. Auch hier ist die Dateiendung zu beachten. Für ein klassisches WPA-PSK-Netzwerk kann die Konfiguration wie folgt aussehen:
+```ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=DE
+
+network={
+    ssid="MeinWLANName"
+    psk="MeinWLANPasswort"
+    key_mgmt=WPA-PSK
+}
+```
